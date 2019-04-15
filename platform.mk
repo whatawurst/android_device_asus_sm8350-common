@@ -20,6 +20,9 @@ PLATFORM_PATH := device/asus/sm8350-common
 PRODUCT_SOONG_NAMESPACES += \
     $(PLATFORM_PATH)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Super partition
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
