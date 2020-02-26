@@ -120,6 +120,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
+### FASTBOOTD
+PRODUCT_PACKAGES += \
+    fastbootd
+
 ### HEALTH
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
