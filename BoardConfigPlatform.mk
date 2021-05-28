@@ -48,6 +48,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)/releasetools
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/hardware/include
 
 ### KERNEL
+KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 
 TARGET_KERNEL_SOURCE = kernel/asus/sm8350/
