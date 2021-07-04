@@ -15,6 +15,8 @@
 
 BUILD_TOP := $(shell pwd)
 
+BOARD_VENDOR := asus
+
 PLATFORM_PATH := device/asus/sm8350-common
 
 ### BOARD
