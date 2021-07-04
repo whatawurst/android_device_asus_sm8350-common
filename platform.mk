@@ -20,6 +20,10 @@ PLATFORM_PATH := device/asus/sm8350-common
 PRODUCT_SOONG_NAMESPACES += \
     $(PLATFORM_PATH)
 
+# A/B
+ENABLE_VIRTUAL_AB := true
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
