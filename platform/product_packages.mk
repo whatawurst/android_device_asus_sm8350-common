@@ -38,3 +38,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
+
+### HEALTH
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
