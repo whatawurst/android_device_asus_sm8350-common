@@ -16,5 +16,13 @@
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.first_stage_ramdisk \
+    init.asus.debugtool.rc \
+    init.asus.rc \
+    init.asus.usb.rc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qti.kernel.rc \
+    init.qti.ufs.rc \
     init.recovery.qcom.rc \
+    init.target.rc \
     ueventd.qcom.rc
