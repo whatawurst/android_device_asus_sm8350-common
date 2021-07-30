@@ -1,0 +1,4 @@
+# vendor_file_contexts
+
+# DEV
+/dev/dri/card0                                             u:object_r:graphics_device:s0

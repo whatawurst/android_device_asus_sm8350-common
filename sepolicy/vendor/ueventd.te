@@ -1,0 +1,6 @@
+# ueventd.te
+#
+recovery_only(`
+    allow ueventd self:capability { sys_nice };
+')
+
