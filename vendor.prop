@@ -1,2 +1,8 @@
 # fastbootd
 ro.fastbootd.available=true
+
+### RADIO
+persist.radio.multisim.config=dsds
+persist.vendor.radio.multisim.config=dsds
+ro.telephony.default_network=26,26
+vendor.telephony.default_network=26,26
