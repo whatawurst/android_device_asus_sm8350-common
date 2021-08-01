@@ -615,22 +615,6 @@ service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
     user root
     oneshot
 
-# ASUS_BSP +++ shianliang "[Kirin][SIM]SYNC SIMCODE VALUE"
-service vendor.simcode /vendor/bin/sh /vendor/bin/parse.simcode.sh
-    class main
-    user root
-    group root
-    oneshot
-# ASUS_BSP --- shianliang "[Kirin][SIM]SYNC SIMCODE VALUE"
-
-#ASUS_BSP LanceHuang+++ dynamic change default network
-service vendor.country /vendor/bin/sh /vendor/bin/country.sh
-    class main
-    user root
-    group root
-    oneshot
-#ASUS_BSP LanceHuang--- dynamic change default network
-
 service qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
@@ -638,13 +622,8 @@ service qcom-c_main-sh /vendor/bin/init.class_main.sh
     oneshot
 
 on property:vold.decrypt=trigger_restart_framework
-    start vendor.country
-    start vendor.simcode
     start qcom-c_main-sh
     start wcnss-service
-
-on property:persist.vendor.radio.multisim.config=*
-    setprop persist.radio.multisim.config ${persist.vendor.radio.multisim.config}
 
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
