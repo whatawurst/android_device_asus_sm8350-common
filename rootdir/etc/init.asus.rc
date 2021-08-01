@@ -12,15 +12,7 @@
 #
 #################################
 
-import /vendor/etc/init/init.asus.storage.rc
-
-# For IMS TwinApps
-import init.asus.twinapps.rc
-
 on boot
-   insmod /vendor/lib/modules/texfat.ko
-   insmod /vendor/lib/modules/tntfs.ko
-
     # ASUS_BSP Audio +++
     mkdir /mnt/vendor/persist/audio 0770 root audio
     # ASUS_BSP Audio ---

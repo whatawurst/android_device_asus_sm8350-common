@@ -78,33 +78,6 @@ on property:vendor.enable_rawdump=1
 on property:persist.asus.mupload.enable=1
 	write /sys/fs/selinux/log 1
 
-#ASUS BSP Widevine ++
-## on property:sys.boot_completed=1
-#on property:vendor.atd.widevine.test=1
-#        start vendor.widevine_daemon
-
-#on property:sys.boot_completed=1
-#        start vendor.widevine_daemon
-
-#on property:debug.check.keybox=1
-#    start widevine
-
-#service vendor.widevine_daemon /vendor/bin/widevine_daemon
-#    user root
-#    group root
-#    disabled
-#    seclabel u:r:vendor_init:s0
-#    oneshot
-
-#service widevine /vendor/bin/sh /vendor/bin/widevine.sh
-#    class late_start
-#   user root
-#    group root
-#    disabled
-#    oneshot
-
-#ASUS BSP Widevine --
-
 service wifistresstest /vendor/bin/sh /vendor/bin/wifistresstest.sh
     class late_start
     user root
@@ -174,11 +147,6 @@ on property:persist.vendor.asus.startlog=0
 #    write /sys/fs/selinux/log 0
 
 
-#on property:persist.vendor.asus.startlog=1 && property:vold.decrypt=trigger_restart_framework
-#	start check-datalog
-#on property:persist.vendor.asus.startlog=0 && property:vold.decrypt=trigger_restart_framework
-#	start check-datalog
-
 service saveramdump /system/vendor/bin/saveramdump.sh
     class late_start
     oneshot
@@ -230,16 +198,6 @@ service logcat-charger /system/bin/logcat -b kernel -b main -b system  -b crash 
 seclabel u:r:savelogmtp:s0
 #ASUS_BSP Austin_Tseng : for charger mode logcat +++
 
-service sendevtlog /system/vendor/bin/sh /system/vendor/bin/sendevtlog.sh
-    class late_start
-    oneshot
-    disabled
-
-service sendlogcatlog /system/vendor/bin/sh /system/vendor/bin/sendlogcatlog.sh
-    class late_start
-    oneshot
-    disabled	
-
 #ASUS_BSP: [ASDF] Check for LastShutdown Logs +++
 service check_last /system/vendor/bin/sh /system/vendor/bin/init.asus.check_last.sh
     user root
@@ -264,15 +222,6 @@ on property:persist.vendor.radio.check_asdf=*
 #ASUS_BSP: [ASDF] Check for Abnormal Shutdown Logs ---
 
 #ASUS_BSP: [DEBUG] Power On/Off; Restart +++
-service asus_power_onoff /system/vendor/bin/sh /system/vendor/bin/init.asus.power.onoff.sh
-    user root
-    group root
-    disabled
-    oneshot
-seclabel u:r:dumpstate:s0
-
-on property:sys.boot_completed=1
-    start asus_power_onoff
     
 #jack to stop logcat-asdf when boot complete
 on property:sys.boot_completed=1
@@ -389,13 +338,6 @@ service execkernelevt /system/vendor/bin/sh /system/vendor/bin/execkernelevt.sh
     oneshot
 	seclabel u:r:dumpstate:s0	
 
-service AsusUpdateAttestationKey /system/vendor/bin/sh /vendor/bin/AsusUpdateAttestationKey.sh
-    user root
-    group root
-    disabled
-    seclabel u:r:savelogmtp:s0
-    oneshot
-
 service qcom_dcc_debug /system/vendor/bin/sh /vendor/bin/init.qti.kernel.debug-lahaina.sh
 	user root
 	group root
@@ -419,9 +361,6 @@ on property:persist.vendor.zram.enable=0
 
 on property:vendor.zram.enable=*
 	start asus_zram
-
-on property:vendor.update.attestation.key=*
-	start AsusUpdateAttestationKey
 
 # ASUS_BSP Wei +++
 # bugreport is triggered by developer options
