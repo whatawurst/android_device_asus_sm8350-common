@@ -1,5 +1,0 @@
-# init.te
-#
-recovery_only(`
-    allow init vendor_sysfs_usb_device_writable:file rw_file_perms;
-')

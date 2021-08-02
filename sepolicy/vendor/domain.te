@@ -1,1 +1,0 @@
-neverallow { domain -vendor_init -ueventd } r_fs_type:file write;
