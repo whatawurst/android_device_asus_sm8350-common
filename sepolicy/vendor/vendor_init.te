@@ -1,5 +1,0 @@
-# vendor_init.te
-#
-recovery_only(`
-    allow vendor_init rootfs:dir r_dir_perms;
-')
