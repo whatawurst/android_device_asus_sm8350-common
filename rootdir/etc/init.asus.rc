@@ -159,14 +159,14 @@ on property:ro.boot.ftm=1
 ###+++++++++++++++++++++++++++++++++++++++++++++++###
 
 #ASUS_BSP 2nd G+G +++
-service rstg2k /vendor/bin/sh /vendor/etc/rstg2k.sh
+service rstg2k /vendor/bin/sh /vendor/bin/rstg2k.sh
     user system
     group system
     seclabel u:r:asus_sensors:s0
     oneshot
     disabled
 
-service rstgy2k /vendor/bin/sh /vendor/etc/rstgy2k.sh
+service rstgy2k /vendor/bin/sh /vendor/bin/rstgy2k.sh
     user system
     group system
     seclabel u:r:asus_sensors:s0
