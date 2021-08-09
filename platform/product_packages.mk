@@ -183,6 +183,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+### UPDATE ENGINE
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
+
 ### WIFI
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
