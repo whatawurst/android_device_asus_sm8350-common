@@ -14,15 +14,32 @@
 
 ### INIT
 PRODUCT_PACKAGES += \
+    asus_mediaflag.sh \
+    firmware_version.sh \
     fstab.qcom \
     fstab.qcom.first_stage_ramdisk \
     init.asus.debugtool.rc \
     init.asus.rc \
     init.asus.usb.rc \
+    init.class_main.sh \
+    init.kernel.post_boot-lahaina.sh \
+    init.qcom.class_core.sh \
+    init.qcom.early_boot.sh \
     init.qcom.factory.rc \
+    init.qcom.post_boot.sh \
     init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.usb.sh \
     init.qti.kernel.rc \
     init.qti.ufs.rc \
     init.recovery.qcom.rc \
     init.target.rc \
+    netlog.sh \
+    NfcFelica.sh \
+    rstg2k.sh \
+    rstgy2k.sh \
+    ssr_cfg.sh \
+    touch_ver.sh \
+    WifiMac.sh \
+    WifiSARPower.sh \
     ueventd.qcom.rc
