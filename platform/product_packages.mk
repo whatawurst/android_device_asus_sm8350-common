@@ -155,6 +155,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstdc++
 
+### LIGHTS
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service \
+    lights.qcom
+
 ### MEDIA
 PRODUCT_PACKAGES += \
     libavservices_minijail \
