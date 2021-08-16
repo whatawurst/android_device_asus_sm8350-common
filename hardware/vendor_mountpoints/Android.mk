@@ -1,0 +1,41 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+# Create vendor mount points
+ASUSFW_VENDOR_MOUNT_POINT := $(TARGET_OUT_VENDOR)/asusfw
+BT_FIRMWARE_VENDOR_MOUNT_POINT := $(TARGET_OUT_VENDOR)/bt_firmware
+DSP_VENDOR_MOUNT_POINT := $(TARGET_OUT_VENDOR)/dsp
+FIRMWARE_MNT_VENDOR_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt
+VM_SYSTEM_VENDOR_MOUNT_POINT := $(TARGET_OUT_VENDOR)/vm-system
+XROM_VENDOR_MOUNT_POINT := $(TARGET_OUT_VENDOR)/xrom
+
+ALL_DEFAULT_INSTALLED_MODULES += $(ASUSFW_VENDOR_MOUNT_POINT) \
+                                 $(BT_FIRMWARE_VENDOR_MOUNT_POINT) \
+                                 $(DSP_VENDOR_MOUNT_POINT) \
+                                 $(FIRMWARE_MNT_VENDOR_MOUNT_POINT) \
+                                 $(VM_SYSTEM_VENDOR_MOUNT_POINT) \
+                                 $(XROM_VENDOR_MOUNT_POINT)
+
+$(ASUSFW_VENDOR_MOUNT_POINT):
+	@echo "Creating $(ASUSFW_VENDOR_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/asusfw
+
+$(BT_FIRMWARE_VENDOR_MOUNT_POINT):
+	@echo "Creating $(BT_FIRMWARE_VENDOR_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/bt_firmware
+
+$(DSP_VENDOR_MOUNT_POINT):
+	@echo "Creating $(DSP_VENDOR_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/dsp
+
+$(FIRMWARE_MNT_VENDOR_MOUNT_POINT):
+	@echo "Creating $(FIRMWARE_MNT_VENDOR_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/firmware_mnt
+	
+$(VM_SYSTEM_VENDOR_MOUNT_POINT):
+	@echo "Creating $(VM_SYSTEM_VENDOR_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/vm-system
+
+$(XROM_VENDOR_MOUNT_POINT):
+	@echo "Creating $(XROM_VENDOR_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/xrom
