@@ -221,6 +221,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# VENDOR_SERVICE_MANAGER
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 ### WIFI
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
