@@ -150,6 +150,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstdc++
 
+### MEDIA
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor \
+    libcodec2_hidl@1.1.vendor
+
 ### OMX
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
