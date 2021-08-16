@@ -1,6 +1,22 @@
 # fastbootd
 ro.fastbootd.available=true
 
+### CRYPTO
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+
+### GATEKEEPER
+vendor.gatekeeper.disable_spu=true
+
+### INCREMENTAL_FS
+ro.incremental.enable=yes
+
+### QC_SYSTEM_DAEMON
+persist.vendor.qcomsysd.enabled=0
+
+### PERF
+ro.vendor.extension_library=libqti-perfd-client.so
+
 ### RADIO
 persist.radio.multisim.config=dsds
 persist.vendor.radio.multisim.config=dsds
