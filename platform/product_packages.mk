@@ -69,6 +69,9 @@ PRODUCT_PACKAGES += \
     bootctrl.lahaina \
     bootctrl.lahaina.recovery
 
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
+
 ### CAMERA
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
