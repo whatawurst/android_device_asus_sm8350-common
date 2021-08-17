@@ -1,0 +1,3 @@
+type adf_block_device, dev_type;
+type adp_block_device, dev_type;
+type batinfo_block_device, dev_type;
