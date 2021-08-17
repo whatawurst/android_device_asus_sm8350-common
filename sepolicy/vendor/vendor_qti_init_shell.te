@@ -1,0 +1,3 @@
+# vendor_qti_init_shell.te
+
+set_prop(vendor_qti_init_shell, ctl_start_prop)
