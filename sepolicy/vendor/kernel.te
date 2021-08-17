@@ -1,3 +1,4 @@
 # kernel.te
 
 allow kernel ASDF_file:dir r_dir_perms;
+allow kernel bat_file:dir r_dir_perms;
