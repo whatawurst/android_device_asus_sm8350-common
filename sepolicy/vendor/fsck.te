@@ -1,0 +1,10 @@
+# fsck.te
+
+# /dev/block/sda12
+allow fsck adf_block_device:blk_file rw_file_perms;
+
+# /dev/block/sda13
+allow fsck adp_block_device:blk_file rw_file_perms;
+
+# /dev/block/sda8
+allow fsck batinfo_block_device:blk_file rw_file_perms;
