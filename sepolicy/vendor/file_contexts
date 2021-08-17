@@ -7,6 +7,9 @@
 /asdf(/.*)?                                                     u:object_r:ASDF_file:s0
 /batinfo(/.*)?                                                  u:object_r:bat_file:s0
 
+### DATA
+/data/logcat_log(/.*)?                                          u:object_r:log_file:s0
+
 ### DEV
 /dev/block/sda12                                                u:object_r:adf_block_device:s0
 /dev/block/sda13                                                u:object_r:adp_block_device:s0
