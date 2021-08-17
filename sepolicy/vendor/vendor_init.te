@@ -2,6 +2,9 @@
 
 get_prop(vendor_init, persist_debug_prop)
 
+# ro.asus.screen.colortemp.enable
+set_prop(vendor_init, vendor_screen_prop)
+
 # /dev/cpuset/**
 allow vendor_init cgroup:file r_file_perms;
 
