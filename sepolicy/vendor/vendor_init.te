@@ -4,3 +4,13 @@ get_prop(vendor_init, persist_debug_prop)
 
 # /dev/cpuset/**
 allow vendor_init cgroup:file r_file_perms;
+
+### NEVERALLOW
+# /data/anr
+dontaudit vendor_init anr_data_file:dir { create };
+
+# /data/tombstones
+dontaudit vendor_init tombstone_data_file:dir { create };
+
+# /data/media
+dontaudit vendor_init media_rw_data_file:dir { create };
