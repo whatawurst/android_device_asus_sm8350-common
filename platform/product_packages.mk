@@ -158,8 +158,7 @@ PRODUCT_PACKAGES += \
 ### LIGHTS
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service \
-    lights.qcom
+    android.hardware.light@2.0-service.lahaina
 
 ### MEDIA
 PRODUCT_PACKAGES += \
