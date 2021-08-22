@@ -194,6 +194,8 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
+    libmm-omxcore \
+    libstagefright_softomx.vendor \
     libstagefrighthw
 
 ### POWER
