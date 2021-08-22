@@ -188,7 +188,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
-# QMI
+### QMI
 PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect \
@@ -196,7 +196,7 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
-# QTI service tracker
+### QTI service tracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.0.vendor \
     vendor.qti.hardware.servicetracker@1.1.vendor \
@@ -208,7 +208,7 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
-# Sensors
+### SENSORS
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge
@@ -239,7 +239,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
-# VENDOR_SERVICE_MANAGER
+### VENDOR_SERVICE_MANAGER
 PRODUCT_PACKAGES += \
     vndservicemanager
 
