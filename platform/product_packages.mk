@@ -213,6 +213,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge
 
+### SNAP
+PRODUCT_PACKAGES += \
+    Snap
+
 ### TELEPHONY
 PRODUCT_PACKAGES += \
     ims-ext-common \
