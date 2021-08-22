@@ -34,6 +34,12 @@ on early-init
     write /proc/sys/kernel/sched_boost 1
     wait /sys/devices/soc0/soc_id
 
+    # Set by init.qti.qcv.rc on stock
+    setprop ro.boot.product.vendor.sku "lahaina"
+    # Set by init.qti.qcv.sh on stock
+    setprop ro.vendor.qti.soc_id "415"
+    setprop ro.vendor.qti.soc_name "lahaina"
+
 on init
     # Scheduler uclamp
     mkdir /dev/cpuctl/foreground
@@ -135,6 +141,9 @@ on post-fs-data
 
 on early-boot
     start vendor.sensors
+
+    # Set by ipa_fws.rc on stock
+    write /dev/ipa 1
 
 on boot
     #write /dev/cpuset/audio-app/cpus 1-2
