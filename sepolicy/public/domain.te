@@ -1,0 +1,4 @@
+# domain.te
+
+neverallow { domain -vendor_init -ueventd } r_fs_type:file { write execute };
+neverallow { domain -vendor_init -ueventd } rw_fs_type:file { execute };

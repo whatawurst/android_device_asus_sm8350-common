@@ -165,6 +165,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 ### SEPOLICY
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(PLATFORM_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
 
 ### PROPERTIES
