@@ -1,0 +1,5 @@
+# hal_audio_default.te
+
+set_prop(hal_audio_default, vendor_audio_prop)
+
+allow hal_audio_default mnt_vendor_file:file r_file_perms;
