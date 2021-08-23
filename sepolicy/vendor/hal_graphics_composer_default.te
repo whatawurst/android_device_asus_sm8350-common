@@ -6,3 +6,8 @@ hal_server_domain(hal_graphics_composer_default, hal_display_iris)
 add_hwservice(hal_graphics_composer_default, hal_display_iris_hwservice)
 
 set_prop(hal_graphics_composer_default, vendor_display_prop)
+
+# /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
+# /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+# /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
+allow hal_graphics_composer_default sysfs_devices_system_cpu:file rw_file_perms;
