@@ -264,6 +264,10 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+### VIBRATOR
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service-asus.lahaina
+
 ### WIFI
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
