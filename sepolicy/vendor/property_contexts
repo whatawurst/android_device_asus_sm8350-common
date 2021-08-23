@@ -3,5 +3,6 @@ ro.fastbootd.available                 u:object_r:exported_default_prop:s0
 
 ro.asus.screen.                        u:object_r:vendor_screen_prop:s0
 
+vendor.use.audio.                      u:object_r:vendor_audio_prop:s0
 vendor.camera.                         u:object_r:vendor_camera_prop:s0
 vendor.asus.virtualtherm               u:object_r:vendor_thermal_prop:s0
