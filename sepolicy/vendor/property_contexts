@@ -26,3 +26,6 @@ vendor.asus.virtualtherm               u:object_r:vendor_thermal_prop:s0
 ro.vendor.wifimac                      u:object_r:vendor_wifi_prop:s0
 ro.vendor.wifimac_2                    u:object_r:vendor_wifi_prop:s0
 vendor.wifi.                           u:object_r:vendor_wifi_prop:s0
+
+# ZRAM
+vendor.asus.zram_setting               u:object_r:vendor_zram_prop:s0
