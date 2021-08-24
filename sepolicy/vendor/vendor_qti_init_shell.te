@@ -3,3 +3,6 @@
 get_prop(vendor_qti_init_shell, exported_wifi_prop)
 
 set_prop(vendor_qti_init_shell, ctl_start_prop)
+
+# /sys/class/qcom-battery/restrict_cur
+allow vendor_qti_init_shell sysfs_battery:file { setattr };
