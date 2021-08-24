@@ -8,11 +8,16 @@ set_prop(vendor_init, vendor_screen_prop)
 # vendor.asus.virtualtherm
 set_prop(vendor_init, vendor_thermal_prop)
 
+# vendor.wlan.softap.driver.status
+set_prop(vendor_init, vendor_wifi_prop)
+
 # /dev/cpuset/**
 allow vendor_init cgroup:file r_file_perms;
 
 ### NEVERALLOW
 
+# vendor.bluetooth.status
+#set_prop(vendor_init, bluetooth_prop)
 # vendor.wlan.softap.driver.status
 #set_prop(vendor_init, vendor_wifi_prop)
 # property=vendor.bluetooth.status
