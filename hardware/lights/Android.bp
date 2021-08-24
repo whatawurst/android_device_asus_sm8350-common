@@ -1,15 +1,14 @@
-Common_CFlags = ["-Wall"]
-Common_CFlags += ["-Werror"]
-
 cc_binary {
-    name: "android.hardware.lights-service.lahaina",
-    stem: "vendor.qti.hardware.lights.service",
+    name: "android.hardware.lights-service.qti-asus.lahaina",
+    stem: "android.hardware.lights-service.qti",
     relative_install_path: "hw",
-    init_rc: ["vendor.qti.hardware.lights.service.rc"],
-    vintf_fragments: ["vendor.qti.hardware.lights.service.xml"],
+    init_rc: ["android.hardware.lights-qti.rc"],
+    vintf_fragments: ["android.hardware.lights-qti.xml"],
     vendor: true,
     shared_libs: [
         "libbase",
+        "liblog",
+        "libhardware",
         "libbinder_ndk",
         "android.hardware.light-ndk_platform",
     ],
