@@ -1,3 +1,4 @@
 # rild.te
 
 set_prop(rild, log_prop)
+set_prop(rild, vendor_gnss_prop)
