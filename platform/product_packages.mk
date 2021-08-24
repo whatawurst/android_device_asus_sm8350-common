@@ -160,8 +160,8 @@ PRODUCT_PACKAGES += \
 
 ### LIGHTS
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service.lahaina
+    lights.qcom \
+    android.hardware.lights-service.qti-asus.lahaina
 
 ### LIVEDISPLAY
 PRODUCT_PACKAGES += \
