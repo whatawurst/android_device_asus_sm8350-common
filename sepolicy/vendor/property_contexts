@@ -7,6 +7,11 @@ persist.vendor.asus.gyrosensor2calibtime u:object_r:vendor_sensors_prop:s0
 # Fastbootd
 ro.fastbootd.available                 u:object_r:exported_default_prop:s0
 
+# GPS
+persist.vendor.asus.gps.               u:object_r:vendor_gnss_prop:s0
+vendor.gps.                            u:object_r:vendor_gnss_prop:s0
+
+# Display
 ro.asus.screen.                        u:object_r:vendor_screen_prop:s0
 
 # Radio
