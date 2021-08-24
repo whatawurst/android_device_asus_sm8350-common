@@ -21,3 +21,8 @@ vendor.asus.operator.                  u:object_r:vendor_radio_prop:s0
 vendor.use.audio.                      u:object_r:vendor_audio_prop:s0
 vendor.camera.                         u:object_r:vendor_camera_prop:s0
 vendor.asus.virtualtherm               u:object_r:vendor_thermal_prop:s0
+
+# Wifi
+ro.vendor.wifimac                      u:object_r:vendor_wifi_prop:s0
+ro.vendor.wifimac_2                    u:object_r:vendor_wifi_prop:s0
+vendor.wifi.                           u:object_r:vendor_wifi_prop:s0
