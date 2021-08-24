@@ -1,6 +1,8 @@
 # genfs_contexts
 
 ### SYSFS
+# Battery
+genfscon sysfs /class/qcom-battery/                                             u:object_r:sysfs_battery:s0
 
 # Kernel wakelock stats
 # for i in $(seq 1 99); do adb shell find /sys/devices -name "wakeup${i}"; done
