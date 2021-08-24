@@ -1,0 +1,3 @@
+# vendor_hal_gnss_qti.te
+
+set_prop(vendor_hal_gnss_qti, vendor_gnss_prop)
