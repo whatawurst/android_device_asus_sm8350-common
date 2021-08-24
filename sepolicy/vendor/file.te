@@ -5,5 +5,7 @@ type ASDF_file, file_type;
 type bat_file, file_type;
 type demoapp_file, file_type;
 
+type proc_evtlog, rw_fs_type, fs_type;
+
 type sysfs_iio, sysfs_type, r_fs_type, fs_type;
 type sysfs_battery, sysfs_type, r_fs_type, fs_type;

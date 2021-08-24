@@ -1,5 +1,8 @@
 # genfs_contexts
 
+### PROC
+genfscon proc /asusevtlog                                                       u:object_r:proc_evtlog:s0
+
 ### SYSFS
 # Battery
 genfscon sysfs /class/qcom-battery/                                             u:object_r:sysfs_battery:s0
