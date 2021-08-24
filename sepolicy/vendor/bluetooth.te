@@ -1,0 +1,6 @@
+# bluetooth.te
+
+get_prop(bluetooth, incremental_prop)
+
+# /proc/filesystems
+allow bluetooth proc_filesystems:file r_file_perms;
