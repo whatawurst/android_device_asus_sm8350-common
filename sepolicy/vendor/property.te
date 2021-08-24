@@ -3,3 +3,4 @@
 type vendor_gnss_prop, property_type;
 type vendor_screen_prop, property_type;
 type vendor_thermal_prop, property_type;
+type vendor_zram_prop, property_type;
