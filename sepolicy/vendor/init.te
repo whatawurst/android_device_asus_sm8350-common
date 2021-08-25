@@ -2,9 +2,6 @@
 
 set_prop(init, exported2_default_prop)
 
-# /ADF
-allow init demoapp_file:dir { mounton };
-
 # /batinfo
 allow init bat_file:dir { mounton };
 

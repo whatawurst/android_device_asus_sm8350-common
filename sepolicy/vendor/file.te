@@ -2,7 +2,6 @@
 
 # asus
 type bat_file, file_type;
-type demoapp_file, file_type;
 
 type proc_evtlog, rw_fs_type, fs_type;
 
