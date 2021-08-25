@@ -442,7 +442,6 @@ on property:persist.sys.enableAPD=0
 
 on property:persist.sys.ultrabatterylife=1
     write /sys/class/asuslib/ultra_bat_life 1
-    write /asdf/CHGLimit 0
 on property:persist.sys.ultrabatterylife=0
     write /sys/class/asuslib/ultra_bat_life 0
 
