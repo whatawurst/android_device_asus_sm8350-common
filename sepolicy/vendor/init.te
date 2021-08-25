@@ -5,9 +5,6 @@ set_prop(init, exported2_default_prop)
 # /ADF
 allow init demoapp_file:dir { mounton };
 
-# /asdf
-allow init ASDF_file:dir r_dir_perms;
-
 # /batinfo
 allow init bat_file:dir { mounton };
 

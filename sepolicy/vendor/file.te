@@ -1,7 +1,6 @@
 # file.te
 
 # asus
-type ASDF_file, file_type;
 type bat_file, file_type;
 type demoapp_file, file_type;
 

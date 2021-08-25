@@ -4,7 +4,6 @@
 # ASUS
 /ADF(/.*)?                                                      u:object_r:demoapp_file:s0
 /APD(/.*)?                                                      u:object_r:demoapp_file:s0
-/asdf(/.*)?                                                     u:object_r:ASDF_file:s0
 /batinfo(/.*)?                                                  u:object_r:bat_file:s0
 
 ### DEV
