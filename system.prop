@@ -1,5 +1,8 @@
 ### BLUETOOTH
 persist.bluetooth.avrcpversion=avrcp16
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.qcom.bluetooth.enable.swb=false
 persist.vendor.qcom.bluetooth.enable.swbpm=false
 ro.bluetooth.library_name=libbluetooth_qti.so
