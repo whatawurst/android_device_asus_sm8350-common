@@ -284,6 +284,10 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+PRODUCT_PACKAGES += \
+    WifiResCommon \
+    WifiResTarget
+
 ### WIFI DISPLAY
 PRODUCT_PACKAGES += \
     libnl \
